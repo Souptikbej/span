@@ -419,6 +419,137 @@
     background-color: #ffb915;
 }
 
+/* __________Product slider________________ */
+.maincontainer {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.maincontainer-image {
+    width: 30%;
+    padding-left: 10px;
+    background-color: rgb(231, 231, 233);
+    overflow: hidden;
+
+}
+
+.maincontainer-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-slider {
+    width: 70%;
+    background-color: rgb(231, 231, 233);
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    padding: 0px;
+    background-color: rgb(231, 231, 233);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar li {
+    list-style: none;
+    position: relative;
+    float: left;
+}
+
+.navbar h1 {
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-decoration: none;
+    margin: 15px;
+    color: rgb(119, 113, 113);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar ul li a::after {
+    content: " ";
+    height: 2px;
+    width: 0;
+    background: #0f0f0f;
+    left: 0;
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover:after {
+    width: 100%;
+}
+
+.slider {
+    padding: 0px 10px;
+    width: 100%;
+    position: relative;
+    border: 1px solid black;
+}
+
+.slider-container {
+    border: 1px solid rgb(255, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    border: none;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 6vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #dbd9d9 100%);
+    cursor: pointer;
+    z-index: 8;
+    font-size: 70px;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+
+}
+
+.pre-btn,
+.nxt-btn {
+    opacity: 0;
+}
+
+.pre-btn:hover,
+.nxt-btn:hover {
+    opacity: 1;
+}
+
 /* _____________product card design________________ */
 .product-card {
     width: 280px;
