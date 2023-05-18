@@ -417,6 +417,75 @@
     background-color: #ffb915;
 }
 
+/* ___________stock effect ____________*/
+.home-sela {
+    background: #ffb915;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.home-stock-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: translate(-50%, -50%); */
+}
+
+.home-stock-1 span {
+    animation: shake 0.5s infinite;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+
+    10% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    100% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+}
+
 /* __________Product slider________________ */
 .maincontainer {
     background-color: rgb(255, 255, 255);
@@ -441,7 +510,7 @@
 .nav-slider {
     width: 70%;
     background-color: rgb(255, 255, 255);
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: relative;
 }
 
@@ -497,7 +566,7 @@
 }
 
 .slider-container {
-    border: 1px solid rgb(255, 0, 0);
+    /* border: 1px solid rgb(255, 0, 0); */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -526,7 +595,7 @@
     align-items: center;
     background: transparent;
     cursor: pointer;
-    z-index: 8;
+    z-index: 1;
     font-size: 70px;
     user-select: none;
 }
@@ -792,6 +861,9 @@
     .product-details {
         padding: 10px;
     }
+    .home-stock-del1{
+        display: none;
+    }
 }
 
 @media (max-width: 425px) {
@@ -835,21 +907,35 @@
     .navbar ul {
         display: none;
     }
-    .product-details h4 a{
+
+    .product-details h4 a {
         font-size: 13px;
     }
-    .product-details p{
+
+    .product-details p {
         font-size: 12px;
     }
-    .product-price{
+
+    .product-price {
         font-size: 12px;
     }
-    .button-cart{
+
+    .button-cart {
         width: 104px;
         font-size: 12px;
         margin-left: 23px;
     }
+
     .button-cart:hover span {
         padding-right: 15px;
+    }
+    .home-sela{
+        height: 70px;
+    }
+    .home-stock-del1{
+        display: none;
+    }
+    .home-stock-del2{
+        display: none;
     }
 }
