@@ -441,6 +441,7 @@
 .nav-slider {
     width: 70%;
     background-color: rgb(255, 255, 255);
+    border: 1px solid black;
     position: relative;
 }
 
@@ -506,6 +507,7 @@
     margin: auto;
     align-items: center;
     position: relative;
+    gap: 10px;
 }
 
 .slider-container::-webkit-scrollbar {
@@ -522,10 +524,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #dbd9d9 100%);
+    background: transparent;
     cursor: pointer;
     z-index: 8;
     font-size: 70px;
+    user-select: none;
 }
 
 .pre-btn {
@@ -593,7 +596,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    height: 200px;
     padding: 0px;
     background: #f0f0f0;
 }
@@ -683,7 +686,7 @@
 }
 
 /* ______button style____________ */
-.button {
+.button-cart {
     display: inline-block;
     border-radius: 4px;
     background-color: #fbb72c;
@@ -699,14 +702,14 @@
     margin-left: 30px;
 }
 
-.button span {
+.button-cart span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.button span:after {
+.button-cart span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -715,11 +718,11 @@
     transition: 0.5s;
 }
 
-.button:hover span {
+.button-cart:hover span {
     padding-right: 25px;
 }
 
-.button:hover span:after {
+.button-cart:hover span:after {
     opacity: 1;
     right: 0;
 }
@@ -831,5 +834,22 @@
 
     .navbar ul {
         display: none;
+    }
+    .product-details h4 a{
+        font-size: 13px;
+    }
+    .product-details p{
+        font-size: 12px;
+    }
+    .product-price{
+        font-size: 12px;
+    }
+    .button-cart{
+        width: 104px;
+        font-size: 12px;
+        margin-left: 23px;
+    }
+    .button-cart:hover span {
+        padding-right: 15px;
     }
 }
