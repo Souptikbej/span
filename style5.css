@@ -419,10 +419,11 @@
 
 /* ___________stock effect ____________*/
 .home-sela {
+    margin: 10px;
     background: #ffb915;
     display: flex;
     justify-content: space-around;
-    height: 100px;
+    height: 80px;
 }
 
 .home-stock-1 {
@@ -796,6 +797,14 @@
     right: 0;
 }
 
+/* ----------------------- */
+.nav__list{
+    list-style: none;
+}
+.nav__link{
+    text-decoration: none;
+}
+
 @media (max-width: 1024px) {
     .catagori-box {
         display: none;
@@ -861,8 +870,25 @@
     .product-details {
         padding: 10px;
     }
-    .home-stock-del1{
+
+    .home-stock-del1 {
         display: none;
+    }
+
+    .nav__menu {
+        position: fixed;
+        border: 1px solid black;
+        bottom: 0;
+        left: 0;
+        background-color: var(--container-color);
+        box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+        width: 100%;
+        height: 4rem;
+        padding: 0 1rem;
+        display: grid;
+        align-content: center;
+        border-radius: 1.25rem 1.25rem 0 0;
+        transition: .4s;
     }
 }
 
@@ -929,13 +955,16 @@
     .button-cart:hover span {
         padding-right: 15px;
     }
-    .home-sela{
+
+    .home-sela {
         height: 70px;
     }
-    .home-stock-del1{
+
+    .home-stock-del1 {
         display: none;
     }
-    .home-stock-del2{
+
+    .home-stock-del2 {
         display: none;
     }
 }
