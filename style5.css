@@ -498,14 +498,16 @@
 
 .maincontainer-image {
     width: 30%;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
+    /* height: 70%; */
+    /* background-color: rgb(255, 255, 255);
+    overflow: hidden; */
 
 }
 
 .maincontainer-image img {
-    width: 100%;
-    object-fit: cover;
+    width: 90%;
+    box-shadow: #ffb915 5px 5px, #ffb915a6 10px 10px, #ffb9157e 15px 15px,#ffb91558 20px 20px, #ffb9152e 25px 25px;
+    /* object-fit: cover; */
 }
 
 .nav-slider {
