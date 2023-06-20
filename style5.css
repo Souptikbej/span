@@ -1026,6 +1026,9 @@ details p {
     line-height: 2;
 }
 
+/* footer-start */
+
+
 @media (max-width: 1024px) {
     .catagori-box {
         display: none;
@@ -1110,6 +1113,26 @@ details p {
         width: 100%;
         height: 100%;
     }
+
+    .question-answer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .question-answer-poster {
+        width: 100%;
+    }
+
+    .question-answer-section {
+        width: 100%;
+    }
+
+    details {
+        width: 100%;
+    }
 }
 
 @media (max-width: 425px) {
@@ -1186,5 +1209,13 @@ details p {
 
     .home-stock-del2 {
         display: none;
+    }
+
+    .question-answer-poster-heading h1 {
+        font-size: 15px;
+    }
+
+    .poster-grapices-home-div {
+        flex-direction: column;
     }
 }
