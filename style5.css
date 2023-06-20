@@ -506,7 +506,7 @@
 
 .maincontainer-image img {
     width: 90%;
-    box-shadow: #ffb915 5px 5px, #ffb915a6 10px 10px, #ffb9157e 15px 15px,#ffb91558 20px 20px, #ffb9152e 25px 25px;
+    box-shadow: #ffb915 5px 5px, #ffb915a6 10px 10px, #ffb9157e 15px 15px, #ffb91558 20px 20px, #ffb9152e 25px 25px;
     /* object-fit: cover; */
 }
 
@@ -841,19 +841,191 @@
 .mv-down-menu {
     font-size: 20px;
 }
+
 /* poster intel */
-.poster-intel-home-div{
+.poster-intel-home-div {
     display: flex;
     padding: 10px;
     column-gap: 10px;
 }
-.poster-intel-home-img{
+
+.poster-intel-home-img {
     width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
 }
-.poster-intel-home-img img{
+
+.poster-intel-home-img img {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
+    transition: scale 400ms;
 }
+
+.poster-intel-home-img:hover img {
+    scale: 120%;
+}
+
+.poster-grapices-home-div {
+    display: flex;
+    padding: 10px;
+    column-gap: 10px;
+}
+
+.poster-grapices-home-img {
+    border-radius: 10px;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.poster-grapices-home-img img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: scale 400ms;
+}
+
+.poster-grapices-home-img:hover img {
+    scale: 120%;
+}
+
+/* question-answer */
+.question-answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.question-answer-poster {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.question-answer-poster-img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.question-answer-poster img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: scale 400ms;
+}
+
+.question-answer-poster:hover img {
+    scale: 120%;
+}
+
+.question-answer-poster-heading {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.question-answer-poster-heading h1 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.question-answer-section {
+    width: 30%;
+    margin: auto auto;
+
+}
+
+details {
+    margin: 1rem auto;
+    padding: 0 1rem;
+    width: 35em;
+    max-width: calc(100% - 2rem);
+    position: relative;
+    border: 1px solid #78909C;
+    border-radius: 6px;
+    background-color: #ECEFF1;
+    color: #263238;
+    transition: background-color .15s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+details:last-child {
+    margin-bottom: 1rem;
+}
+
+details::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    opacity: .15;
+    box-shadow: 0 .25em .5em #263238;
+    pointer-events: none;
+    transition: opacity .2s;
+    z-index: -1;
+}
+
+details[open] {
+    background-color: #FFF;
+}
+
+details::before {
+    opacity: .6;
+}
+
+summary {
+    padding: 1rem 2em 1rem 0;
+    display: block;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+summary::before,
+summary::after {
+    width: .75em;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: '';
+    background-color: currentColor;
+    text-align: right;
+    transform: translateY(-50%);
+    transition: transform .2s ease-in-out;
+}
+
+summary::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+
+details p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin: 0 0 1em;
+    line-height: 2;
+}
+
 @media (max-width: 1024px) {
     .catagori-box {
         display: none;
@@ -927,12 +1099,14 @@
     .nav__menu {
         display: block;
     }
-    .poster-intel-home-div{
+
+    .poster-intel-home-div {
         display: flex;
         flex-direction: column;
         row-gap: 10px;
     }
-    .poster-intel-home-img{
+
+    .poster-intel-home-img {
         width: 100%;
         height: 100%;
     }
