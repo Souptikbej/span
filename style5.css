@@ -287,7 +287,8 @@
 
 /* ____Slideshow start_____ */
 .slideshow-container {
-    max-width: 1349px;
+    /* max-width: 1349px; */
+    /* width: 100%; */
     position: relative;
     margin: auto;
     padding: 10px;
@@ -937,7 +938,6 @@
 .question-answer-section {
     width: 30%;
     margin: auto auto;
-
 }
 
 details {
@@ -1242,6 +1242,7 @@ footer .bottom-details .bottom_text {
     margin-right: 10px;
 }
 
+/* for mobile view menu ber */
 @media (max-width: 1024px) {
     .catagori-box {
         display: none;
@@ -1281,6 +1282,22 @@ footer .bottom-details .bottom_text {
         width: 100%;
     }
 
+    .question-answer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+/* 
+    .question-answer-section {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto;
+    } */
+
+    .question-answer-poster {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1330,19 +1347,17 @@ footer .bottom-details .bottom_text {
     .question-answer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        padding: 10px;
-    }
-
-    .question-answer-poster {
-        width: 100%;
+        justify-content: center;
     }
 
     .question-answer-section {
         width: 100%;
     }
 
+    .question-answer-poster {
+        width: 100%;
+    }
     details {
         width: 100%;
     }
