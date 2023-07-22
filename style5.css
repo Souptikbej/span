@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .header1 {
@@ -23,12 +24,10 @@
 .user-profile {
     background-color: #FFD369;
     border-radius: 25px;
-    width: 120px;
-    padding: 5px 10px;
+    padding: 0px 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -46,9 +45,9 @@
 }
 
 .wcc {
-    width: 20px;
-    height: 20px;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 15px;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -1288,7 +1287,8 @@ footer .bottom-details .bottom_text {
         align-items: center;
         justify-content: center;
     }
-/* 
+
+    /* 
     .question-answer-section {
         display: grid;
         width: 100%;
@@ -1297,6 +1297,16 @@ footer .bottom-details .bottom_text {
 
     .question-answer-poster {
         width: 100%;
+    }
+
+    /* footer  */
+    footer .content .link-boxes {
+        flex-wrap: wrap;
+    }
+
+    footer .content .link-boxes .input-box {
+        width: 40%;
+        margin-top: 10px;
     }
 }
 
@@ -1358,8 +1368,39 @@ footer .bottom-details .bottom_text {
     .question-answer-poster {
         width: 100%;
     }
+
     details {
         width: 100%;
+    }
+
+    /* footer  */
+
+    footer {
+        position: relative;
+    }
+
+    .content .top .logo-details {
+        font-size: 26px;
+    }
+
+    .content .top .media-icons a {
+        height: 35px;
+        width: 35px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    footer .content .link-boxes .box {
+        width: calc(100% / 3 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+        width: 60%;
+    }
+
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a {
+        font-size: 12px;
     }
 }
 
@@ -1445,5 +1486,25 @@ footer .bottom-details .bottom_text {
 
     .poster-grapices-home-div {
         flex-direction: column;
+    }
+
+    footer::before {
+        top: 145px;
+    }
+
+    footer .content .top {
+        flex-direction: column;
+    }
+
+    .content .top .media-icons {
+        margin-top: 16px;
+    }
+
+    footer .content .link-boxes .box {
+        width: calc(100% / 2 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+        width: 100%;
     }
 }

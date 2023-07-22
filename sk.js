@@ -30,6 +30,9 @@ productContainerss.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+
+
 // nav
 let subMenu = document.getElementById("subMenu");
 function toggleMenu() {
