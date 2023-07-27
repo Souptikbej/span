@@ -278,7 +278,7 @@
 }
 
 .catagori-box:hover>.categorey-box {
-    max-height: 451px;
+    max-height:;
     opacity: 1;
     visibility: visible;
     transition: all .3s ease-in;
@@ -353,7 +353,9 @@
     overflow-x: auto;
     scroll-behavior: smooth;
 }
-
+.Top-categories-of-the-month-image-main-box  a{
+    color: #000;
+}
 .Top-categories-of-the-month-image-main-box::-webkit-scrollbar {
     display: none;
 }
