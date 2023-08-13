@@ -13,7 +13,16 @@
 }
 
 .weblogo {
-    padding: 10px;
+    padding: 14px;
+}
+
+.weblogo .websitename {
+    color: #000000;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+    cursor: pointer;
 }
 
 .wish-compare-cart {
@@ -21,15 +30,20 @@
     gap: 5px;
 }
 
-.user-profile {
-    background-color: #FFD369;
-    border-radius: 25px;
-    padding: 0px 15px;
+.user-profile .user-profile-a {
+    background-color: #FFD369 ;
+    border-radius: 15px 0px 15px 0px;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #000;
+    list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
+    gap: 10px;
+    text-decoration: none;
 }
 
 .user-profile img {
@@ -37,6 +51,10 @@
     padding: 1px;
     border-radius: 50%;
     background-color: #ffffff;
+}
+
+.myaccount {
+    font-size: 15px;
 }
 
 .weblogo img {
@@ -278,7 +296,8 @@
 }
 
 .catagori-box:hover>.categorey-box {
-    max-height:;
+    max-height: 480px;
+    ;
     opacity: 1;
     visibility: visible;
     transition: all .3s ease-in;
@@ -353,9 +372,11 @@
     overflow-x: auto;
     scroll-behavior: smooth;
 }
-.Top-categories-of-the-month-image-main-box  a{
+
+.Top-categories-of-the-month-image-main-box .catbox {
     color: #000;
 }
+
 .Top-categories-of-the-month-image-main-box::-webkit-scrollbar {
     display: none;
 }
